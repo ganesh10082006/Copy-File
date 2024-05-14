@@ -22,17 +22,19 @@ End the program.
 #To write a python program for reading content from a CSV file.
 #Developed by: GANESH G.
 #Register Number: 212223230059
+with open("text1.txt",'r') as fp:
+    msg1=fp.read()
+with open("copy.txt",'w') as fp1:
+    fp1.write(msg1)
 
-import pandas as pd
-df = pd.read_csv('nba.csv')
-print(df.head(10))
-print(df.tail())
-print("Number of rows:",len(df.axes[0]))
-print("Number of columns:",len(df.axes[1]))
 ~~~
 ### OUTPUT:
+![image](https://github.com/ganesh10082006/Copy-File/assets/151981672/ae1900a9-09c6-4b5e-925e-22b5f0ded586)
 
-![image](https://github.com/ganesh10082006/Copy-File/assets/151981672/4dcb09af-2b64-42dc-ad45-db5aa5da131e)
+![image](https://github.com/ganesh10082006/Copy-File/assets/151981672/7f51b3f9-fb65-484c-85e3-06fc71577433)
+
+![image](https://github.com/ganesh10082006/Copy-File/assets/151981672/d7ff52a5-e588-4abb-99b3-d15ab9ca5d1a)
+
 
 
 ## RESULT:
